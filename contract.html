@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONTERAT | GYMBD</title>
+    <link rel="stylesheet" href="contract.css">
+  </head>
+  <body>
+    <div class="nav-content">
+      <nav>
+        <img src="IMG/GYMBD__1_-removebg-preview.png" />
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="Gallery.html">GALLERY</a></li>
+          <li><a href="JOIN.html">JOIN</a></li>
+          <li><a href="contract.html">CONTACT</a></li>
+          <li><a href="About.html">ABOUT US</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="conteinar-input">
+      <form onsubmit="sendEmail(); reset(); return false;">
+        <h1>GET IN TACH</h1>
+        <input type="text" placeholder="YOUR NAME" id="name" required />
+        <input type="email" placeholder="YOUR Email" id="email" required />
+        <input type="text" placeholder="YOUR Phone" id="Phone" required />
+        <textarea
+          id="Mesage"
+          rows="4"
+          placeholder="How can we help you?"
+        ></textarea>
+        <button type="submit">SEND</button>
+      </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "emtu561@gmail.com",
+          Password: "Emtu****4450",
+          To: "tmemtu123@gmail.com",
+          From: document.getElementById("email").value,
+          Subject: "This is the subject",
+          Body: "And this is the body",
+        }).then((message) => alert(message));
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .nav-content {
+    padding: 10px;
+    border-bottom: 2px solid black;
+  }
+  
+  .nav-content nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav-content nav img {
+    height: 60px;
+  }
+  
+  .nav-content nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+  }
+  
+  .nav-content nav ul li {
+    margin-left: 15px;
+    margin-right: 20px;
+  }
+  
+  .nav-content nav ul li:first-child {
+    margin-left: 0px;
+  }
+  
+  .nav-content nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .nav-content nav ul li a:hover {
+    color: #0fb800;
+    transition: var(--trans, color 0.4s ease 0s);
+  }
+.gym-pic{
+  
+}
+.gym-pic h1{
+  margin-bottom: 5%;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+.gym-pic img{
+  margin: 2%;
+}

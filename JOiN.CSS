@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.nav-content {
+  padding: 10px;
+}
+
+.nav-content nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-content nav img {
+  height: 60px;
+}
+
+.nav-content nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  cursor: pointer;
+}
+
+.nav-content nav ul li {
+  margin-left: 15px;
+  margin-right: 20px;
+}
+
+.nav-content nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  font-size: 16px;
+}
+.nav-content nav ul li a:hover {
+  color: #0fb800;
+  transition: var(--trans, color 0.4s ease 0s);
+}
+
+.join {
+  margin-top: 0px;
+  margin: 2%;
+}
+.join h1 {
+  font-family: Blippo, fantasy;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.contener-join {
+  background: #ffffff;
+  margin: 5%;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;  width: 300px;
+  height: 450px;
+}
+.join{
+  text-align: center;
+  display: inline-block;
+  margin: 70px; 
+}
+
+/* 1Day */
+.text-join1 {
+  background: #007aff;
+  width: 300px;
+  height: 60px;
+  display: inline-block;
+  text-align: center;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+
+}
+/* 6month */
+.text-join6 {
+  background: #33ff01;
+  width: 300px;
+  height: 60px;
+  display: inline-block;
+  text-align: center;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+/* 1year */
+.text-join12 {
+  background: #d6c808;
+  width: 300px;
+  height: 60px;
+  display: inline-block;
+  text-align: center;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+
+}
+/* 30day */
+
+.text-join1 h1 {
+  font-weight: 500;
+  line-height: 30px;
+  color: rgb(255, 255, 255);
+  padding: 15px;
+}
+/* 6month */
+.text-join6 h1 {
+  font-weight: 500;
+  line-height: 30px;
+  color: rgb(255, 255, 255);
+  padding: 15px;
+}
+/* 1year */
+.text-join12 h1 {
+  font-weight: 500;
+  line-height: 30px;
+  color: rgb(255, 255, 255);
+  padding: 15px;
+}
+/* 1day */
+
+.text-join1 p {
+  font-size: 40px;
+  font-weight: 500;
+  padding: 10px;
+}
+/* 6month */
+
+.text-join6 p {
+  font-size: 40px;
+  font-weight: 500;
+  padding: 10px;
+}
+/* 1year */
+
+.text-join12 p {
+  font-size: 40px;
+  font-weight: 500;
+  padding: 10px;
+}
+.offer {
+  text-decoration-line:line-through;
+  font-size: 40px;
+  font-weight: 500;
+  padding: 15px;
+}
+/* 30day */
+.text-join1 button {
+  width: 210px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 9px;
+  color: rgb(255, 255, 255);
+  background: #d6c808;
+  margin: 30px;
+}
+.text-join1 button:hover {
+  cursor: pointer;
+  background-color: #ff6701;
+  transition: var(--trans, background-color 0.4s ease 0s);
+}
+/* 6month */
+.text-join6 button {
+  width: 210px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 9px;
+  color: rgb(255, 255, 255);
+  background: #33ff01;
+  margin: 30px;
+}
+.text-join6 button:hover {
+  cursor: pointer;
+  background-color: #7e7e7e;
+  transition: var(--trans, background-color 0.4s ease 0s);
+}
+/* 12month */
+.text-join12 button {
+  width: 210px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 9px;
+  color: rgb(255, 255, 255);
+  background: #007aff;
+
+  margin: 30px;
+}
+.text-join12 button:hover {
+  cursor: pointer;
+  background-color: #000000;
+  transition: var(--trans, background-color 0.4s ease 0s);
+}
