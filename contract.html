@@ -20,32 +20,16 @@
       </nav>
     </div>
     <div class="conteinar-input">
-      <form onsubmit="sendEmail(); reset(); return false;">
+      <form action="https://api.web3forms.com/submit" method="POST">
         <h1>GET IN TACH</h1>
-        <input type="text" placeholder="YOUR NAME" id="name" required />
-        <input type="email" placeholder="YOUR Email" id="email" required />
-        <input type="text" placeholder="YOUR Phone" id="Phone" required />
-        <textarea
-          id="Mesage"
-          rows="4"
-          placeholder="How can we help you?"
-        ></textarea>
+        <input type="hidden" name="access_key" value="4f37dc7c-8daf-407b-9131-02c322707c34">
+
+        <input type="text" name="name" placeholder="YOUR NAME" required>
+        <input type="email" name="email" placeholder="YOUR Email" required>
+        <input type="text" placeholder="YOUR Number" required>
+        <textarea name="message" rows="4" placeholder="How can we help you?" required></textarea>
         <button type="submit">SEND</button>
       </form>
     </div>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-      function sendEmail() {
-        Email.send({
-          Host: "smtp.gmail.com",
-          Username: "emtu561@gmail.com",
-          Password: "Emtu****4450",
-          To: "tmemtu123@gmail.com",
-          From: document.getElementById("email").value,
-          Subject: "This is the subject",
-          Body: "And this is the body",
-        }).then((message) => alert(message));
-      }
-    </script>
   </body>
 </html>
